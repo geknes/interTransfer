@@ -24,6 +24,12 @@ public class Operacion implements Serializable{
 	@Column(name="id_operacion", nullable = false, updatable = false)
 	private Long idOperacion;
 	
+	private String cuentaOrigen;
+	
+	private String cuentaDestino;
+	
+	private String numeroOperacion;
+	
 	private double monto;
 
 	public Operacion() {
