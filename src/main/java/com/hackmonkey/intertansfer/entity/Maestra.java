@@ -24,7 +24,10 @@ public class Maestra implements Serializable{
 	private Long idMaestra;
 	
 	@Column(name="codigo_registro")
-	private Long codigoRegistro;
+	private String codigoRegistro;
+	
+	@Column(name="codigo_tabla")
+	private String codigoTabla;
 	
 	@Column(name="nombre_corto")
 	private String nombreCorto;
@@ -55,6 +58,9 @@ public class Maestra implements Serializable{
 	
 	@Column(name="sweditable")
 	private boolean sweditable;
+	
+	@Column(name="swvisible")
+	private boolean swvisible;
 
 	public Maestra() {
 		super();
@@ -67,15 +73,7 @@ public class Maestra implements Serializable{
 
 	public void setIdMaestra(Long idMaestra) {
 		this.idMaestra = idMaestra;
-	}
-
-	public Long getCodigoRegistro() {
-		return codigoRegistro;
-	}
-
-	public void setCodigoRegistro(Long codigoRegistro) {
-		this.codigoRegistro = codigoRegistro;
-	}
+	} 
 
 	public String getNombreCorto() {
 		return nombreCorto;
@@ -155,6 +153,30 @@ public class Maestra implements Serializable{
 
 	public void setSweditable(boolean sweditable) {
 		this.sweditable = sweditable;
+	}
+
+	public String getCodigoRegistro() {
+		return codigoRegistro;
+	}
+
+	public void setCodigoRegistro(String codigoRegistro) {
+		this.codigoRegistro = codigoRegistro;
+	}
+
+	public String getCodigoTabla() {
+		return codigoTabla;
+	}
+
+	public void setCodigoTabla(String codigoTabla) {
+		this.codigoTabla = codigoTabla;
+	}
+
+	public boolean isSwvisible() {
+		return swvisible;
+	}
+
+	public void setSwvisible(boolean swvisible) {
+		this.swvisible = swvisible;
 	}
 	
 	
