@@ -21,12 +21,12 @@ public class Maestra implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id_maestra")
-	private Long idMaestra;
+	private Long idMaestra;	 
 	
-	@Column(name="codigo_registro")
+	@Column(name="codigo_registro") 
 	private Long codigoRegistro;
 	
-	@Column(name="nombre_corto")
+	@Column(name="nombre_corto") 
 	private String nombreCorto;
 	
 	@Column(name="nombre_largo")
